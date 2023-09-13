@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <div id="container">
+    <h1 id="titulo">Consultas a API</h1>
+  <div id="containerSup">
+    <div id="container1">
+    <h2 class="box box1">Cotação do Bitcoin</h2>
+    <h3 id="lblValor" class="box box1"></h3>
+    <button id="btnClique" class="box box1">Clique aqui!</button>
+  </div>
+
+    <div id="container2">
+    <h2 class="box box2">Previsão do tempo</h2>
+    <h3 id="lblcidade" class="box box2"></h3>
+    <h3 id="lbltemp" class="box box2"></h3>
+    <h3 id="lblcond" class="box box2"></h3>
+    <select name="inpCity" id="inpCity">
+      <option value=""disabled selected hidden>Escolha sua cidade</option>
+      <option value="Volta Redonda">Volta Redonda</option>
+      <option value="Valença">Valença</option>
+      <option value="Resende">Resende</option>
+      <option value="Porto Real">Porto Real</option>
+      <option value="Pinheiral">Pinheiral</option>
+      <option value="Itatiaia">Itatiaia</option>
+      <option value="Barra Mansa">Barra Mansa</option>
+    </select>
+    <button id="btntemp" class="box box2">Clique aqui!</button>
+  </div>
+  </div>
+  <div id="containerInf">
+    <div id="container3">
+    <h2>Verificar CEP</h2>
+    <h3 id="lblcep"></h3>
+    <h3 id="lbllogra"></h3>
+    <h3 id="lblcompl"></h3>
+    <h3 id="lblbairro"></h3>
+    <h3 id="lbllocal"></h3>
+    <h3 id="lbluf"></h3>
+    <input type="number" name="inpCEP" id="inpCEP" placeholder="Digite CEP">
+    <button id="btnCEP">Clique aqui!</button>
+  </div>
+
+    <div id="container4">
+    <h2>Valor do Dolar</h2>
+    <h3 id="lbldolar"></h3>
+    <button id="btndolar">Clique aqui!</button>
+  </div>
+
+  </div>
+ </div>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>
